@@ -396,9 +396,9 @@ h2{
     align-items:center;
     justify-content:space-between;
 
-    gap:80px;
+    gap:40px;
 
-    padding:150px 10% 100px;
+    padding:120px 6% 80px;
 }
 
 /* GRID */
@@ -2050,9 +2050,9 @@ h2{
     position:relative;
     overflow:hidden;
 
-    min-height:120vh;
+    min-height:auto;
 
-    padding:180px 10%;
+    padding:120px 7%;
 
     display:flex;
     align-items:center;
@@ -2060,10 +2060,6 @@ h2{
 
     isolation:isolate;
 }
-
-/* =====================================
-   MEGA BACKGROUND SYSTEM
-===================================== */
 
 .contact::before{
     content:"";
@@ -2155,15 +2151,15 @@ h2{
     position:relative;
 
     width:100%;
-    max-width:1350px;
+    max-width:1200px;
 
-    padding:80px;
+    padding:50px;
 
     border-radius:42px;
 
     display:grid;
 
-    grid-template-columns:1.1fr 0.9fr;
+    grid-template-columns:1fr;
 
     gap:60px;
 
@@ -4122,5 +4118,89 @@ h2{
 
     .nav-connect{
         font-size:14px;
+    }
+}
+/* MOBILE FIXES */
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+        padding:130px 5% 70px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .image-wrapper{
+        width:250px !important;
+        height:250px !important;
+    }
+
+    .floating-tech{
+        display:none;
+    }
+
+    .projects-container,
+    .skills-container{
+        grid-template-columns:1fr !important;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr !important;
+        padding:30px !important;
+    }
+
+    .contact{
+        min-height:auto;
+        padding:100px 5%;
+    }
+
+    .navbar{
+        width:95%;
+    }
+
+    .edu-card{
+        width:100% !important;
+        margin-left:40px !important;
+    }
+}
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:30px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .floating-tech{
+        display:none;
+    }
+
+    .projects-container,
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+        padding:30px 20px;
     }
 }
