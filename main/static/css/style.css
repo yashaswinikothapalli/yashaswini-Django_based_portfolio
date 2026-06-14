@@ -4210,4 +4210,73 @@ h2{
     .role{
         font-size:18px !important;
     }
+    .cta-button,
+    .connect-btn{
+    width:100%;
+    max-width:280px;
+    margin:0 auto;
+    font-size:16px;
+    padding:14px 20px;
+}
+}
+/* MOBILE NAVBAR FIX */
+@media (max-width:768px){
+
+    .navbar{
+        width:95% !important;
+        max-width:400px !important;
+        margin:auto;
+        padding:15px !important;
+    }
+
+    .navbar nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .navbar nav a{
+        font-size:14px;
+    }
+
+    .hero{
+        padding-top:320px !important;
+    }
+}
+@media (max-width:768px){
+
+    .contact-mini{
+        width:90% !important;
+        max-width:280px !important;
+        margin:15px auto !important;
+        padding:12px 20px !important;
+        font-size:14px !important;
+        text-align:center;
+        display:block;
+    }
+
+}
+@media (max-width:768px){
+
+    .hero{
+        padding-top:300px !important;
+    }
+
+    .contact-mini{
+        margin:20px auto 25px;
+        display:inline-flex;
+    }
+
+    .hero-right{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .image-wrapper{
+        width:250px !important;
+        height:250px !important;
+        margin:auto;
+    }
 }
