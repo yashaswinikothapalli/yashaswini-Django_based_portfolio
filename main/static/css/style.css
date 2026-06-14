@@ -4062,221 +4062,190 @@ h2{
     left:100%;
 }
 
-
-
-
-@media screen and (max-width:768px){
-
-    body{
-        overflow-x:hidden;
-    }
-
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-        gap:40px;
-        padding:130px 5% 70px;
-    }
-
-    .hero-left,
-    .hero-right{
-        width:100%;
-    }
-
-    .image-wrapper{
-        width:250px !important;
-        height:250px !important;
-    }
-
-    .floating-tech{
-        display:none;
-    }
-
-    .projects-container,
-    .skills-container{
-        grid-template-columns:1fr !important;
-    }
-
-    .contact-container{
-        grid-template-columns:1fr !important;
-        padding:30px !important;
-    }
-
-    .contact{
-        min-height:auto;
-        padding:100px 5%;
-    }
-
-    .navbar{
-        width:95%;
-    }
-
-    .edu-card{
-        width:100% !important;
-        margin-left:40px !important;
-    }
+body{
+    overflow-x:hidden;
 }
-@media screen and (max-width:768px){
 
-    body{
-        overflow-x:hidden;
-    }
+/* NAVBAR */
 
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-        gap:30px;
-    }
-
-    .hero-left,
-    .hero-right{
-        width:100%;
-    }
-
-    .floating-tech{
-        display:none;
-    }
-
-    .projects-container,
-    .skills-container{
-        grid-template-columns:1fr;
-    }
-
-    .contact-container{
-        grid-template-columns:1fr;
-        padding:30px 20px;
-    }
+.navbar{
+    width:95% !important;
+    max-width:100% !important;
+    padding:15px !important;
+    flex-direction:column;
+    gap:12px;
+    left:50%;
+    transform:translateX(-50%);
 }
-@media (max-width:768px){
 
-    .navbar{
-        padding:15px 5%;
-        flex-direction:column;
-        gap:12px;
-        width:95%;
-    }
+.nav-menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+}
 
-    .navbar nav{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
+.nav-link{
+    font-size:13px;
+}
 
-    .hero{
-        min-height:auto;
-        flex-direction:column-reverse;
-        justify-content:flex-start;
-        text-align:center;
-
-        padding-top:320px !important;
-        padding-left:5%;
-        padding-right:5%;
-        padding-bottom:60px;
-
-        gap:30px;
-    }
-
-    .hero-left,
-    .hero-right{
-        width:100%;
-    }
-
-    .hero-right{
-        display:flex;
-        justify-content:center;
-    }
-
-    .image-wrapper{
-        width:260px !important;
-        height:260px !important;
-        margin:0 auto;
-    }
-
-    .profile{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-    }
-
-    .floating-tech{
-        display:none;
-    }
-
-    .hero-left h1,
-    .hero-title{
-        font-size:38px !important;
-    }
-
-    .role{
-        font-size:18px !important;
-    }
-    .cta-button,
-    .connect-btn{
+.nav-connect{
     width:100%;
-    max-width:280px;
-    margin:0 auto;
-    font-size:16px;
-    padding:14px 20px;
+    max-width:260px;
+    text-align:center;
 }
+
+/* HERO */
+
+.hero{
+    flex-direction:column-reverse !important;
+    text-align:center;
+    justify-content:flex-start;
+    padding:280px 5% 70px !important;
+    gap:35px;
+    min-height:auto;
 }
-/* MOBILE NAVBAR FIX */
-@media (max-width:768px){
 
-    .navbar{
-        width:95% !important;
-        max-width:400px !important;
-        margin:auto;
-        padding:15px !important;
-    }
-
-    .navbar nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:12px;
-    }
-
-    .navbar nav a{
-        font-size:14px;
-    }
-
-    .hero{
-        padding-top:320px !important;
-    }
+.hero-left,
+.hero-right{
+    width:100%;
 }
-@media (max-width:768px){
 
-    .contact-mini{
-        width:90% !important;
-        max-width:280px !important;
-        margin:15px auto !important;
-        padding:12px 20px !important;
-        font-size:14px !important;
-        text-align:center;
-        display:block;
-    }
-
+.hero-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-@media (max-width:768px){
 
-    .hero{
-        padding-top:300px !important;
-    }
+.image-wrapper{
+    width:240px !important;
+    height:240px !important;
+    margin:auto;
+}
 
-    .contact-mini{
-        margin:20px auto 25px;
-        display:inline-flex;
-    }
+.profile{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
-    .hero-right{
-        width:100%;
-        display:flex;
-        justify-content:center;
-    }
+.floating-tech{
+    display:none !important;
+}
 
-    .image-wrapper{
-        width:250px !important;
-        height:250px !important;
-        margin:auto;
-    }
+.hero-title{
+    font-size:34px !important;
+    line-height:1.2;
+}
+
+.role{
+    font-size:18px !important;
+}
+
+.desc{
+    font-size:15px;
+}
+
+.hero-stats{
+    grid-template-columns:1fr !important;
+    gap:15px;
+}
+
+.btns{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.btn{
+    width:100%;
+    max-width:300px;
+}
+
+/* ABOUT */
+
+.about-cards{
+    grid-template-columns:1fr !important;
+}
+
+.about-box{
+    width:100%;
+}
+
+/* PROJECTS */
+
+.grid{
+    grid-template-columns:1fr !important;
+}
+
+.card{
+    width:100%;
+}
+
+/* EDUCATION */
+
+.edu-container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.edu-card{
+    width:100% !important;
+    margin-left:0 !important;
+}
+
+/* SKILLS */
+
+.skills-container{
+    grid-template-columns:1fr !important;
+}
+
+.skill-card{
+    width:100%;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:90px 5%;
+    min-height:auto;
+}
+
+.contact-container{
+    grid-template-columns:1fr !important;
+    padding:25px !important;
+    gap:30px;
+}
+
+.contact-mini{
+    margin:0 auto 20px;
+}
+
+.contact-title{
+    font-size:32px !important;
+    text-align:center;
+}
+
+.contact-desc{
+    text-align:center;
+}
+
+.contact-card{
+    width:100%;
+}
+
+.contact-right{
+    display:flex;
+    justify-content:center;
+}
+
+.contact-orbit{
+    transform:scale(.8);
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    padding:20px;
 }
